@@ -62,7 +62,7 @@ class InventoryEdit extends Component {
           <Form onSubmit={this.handleSubmit}>
             <FormGroup>
               <Label for="prodname" className="h5 mt-3">
-                Product Name
+                Book Title
               </Label>
               <Input
                 type="text"
@@ -73,35 +73,10 @@ class InventoryEdit extends Component {
                 autoComplete="prodname"
               />
             </FormGroup>
-            <FormGroup>
-              <Label for="qty" className="h5 mt-3">
-                Quantity
-              </Label>
-              <Input
-                type="text"
-                name="qty"
-                id="qty"
-                value={item.qty || ""}
-                onChange={this.handleChange}
-                autoComplete="qty"
-              />
-            </FormGroup>
-            <FormGroup>
-              <Label for="price" className="h5 mt-3">
-                Price
-              </Label>
-              <Input
-                type="text"
-                name="price"
-                id="price"
-                value={item.price || ""}
-                onChange={this.handleChange}
-                autoComplete="price"
-              />
-            </FormGroup>
+            
             <FormGroup>
               <Label for="status" className="h5 mt-3">
-                Status
+                Author
               </Label>
               <Input
                 type="text"
@@ -118,7 +93,7 @@ class InventoryEdit extends Component {
                 type="submit"
                 className="mt-3"
                 tag={Link}
-                to="/inventories"
+                to="/"
               >
                 Save
               </Button>{" "}
@@ -126,7 +101,7 @@ class InventoryEdit extends Component {
                 color="secondary"
                 className="mt-3"
                 tag={Link}
-                to="/inventories"
+                to="/"
               >
                 Cancel
               </Button>

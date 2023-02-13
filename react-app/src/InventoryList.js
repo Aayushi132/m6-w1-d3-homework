@@ -54,7 +54,7 @@ class InventoryList extends Component {
             <ButtonGroup>
               <Button
                 size="sm"
-                color="primary"
+                color="info"
                 tag={Link}
                 to={"/books/" + inventory._id}
               >
@@ -62,7 +62,7 @@ class InventoryList extends Component {
               </Button>
               <Button
                 size="sm"
-                color="danger"
+                color="warning"
                 onClick={() => this.removeInv(inventory._id)}
               >
                 Delete
@@ -87,11 +87,11 @@ class InventoryList extends Component {
               Add Book
             </Button>
           </div>
-          <h3>Inventory List</h3>
+          <h3>Book List</h3>
           <Table className="mt-4">
             <thead>
               <tr>
-                <th width="20%">Product Name</th>
+                <th width="20%">Book Title</th>
                 <th width="15%">Author</th>
                 <th width="15%">Actions</th>
               </tr>
